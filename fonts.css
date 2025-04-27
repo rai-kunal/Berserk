@@ -1,0 +1,68 @@
+/* Berserk Font */
+@font-face {
+    font-family: 'Berserk';
+    src: url('../fonts/Berserk.woff2') format('woff2'),
+         url('../fonts/Berserk.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Medieval Font */
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url('../fonts/MedievalSharp.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Base Typography */
+body {
+    font-family: 'MedievalSharp', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Berserk', 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+}
+
+.logo, .hero-title, .section-title {
+    font-family: 'Berserk', 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #8b0000, transparent);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
